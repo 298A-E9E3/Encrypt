@@ -5,9 +5,14 @@ function send(){
     const script = "https://script.google.com/a/macros/fcpsschools.net/s/AKfycbwAC6Oaozf2Qta8I2I1rlCLeIhIww50EXG0TAq82C93KawKmveOcJz-x-y5gawbX_CP_A/exec"
     open(script+"?method="+addressBox.value+"|"+subjectBox.value+"|"+bodyBox.value);
 }
-function decrypt(){
+function decrypt(){  
     var inputBox = document.getElementById("unencrypt");
     var outputBox = document.getElementById("output");
+    var tempel = document.createElement('p');
+    tempel.innerHTML = "test";
+    
+    alert(outputBox.innerHTML);
+    outputBox.innerHTML = 'test';
     var temparray = inputBox.value.split("|");
     var temp = "";
     for(i in temparray){
