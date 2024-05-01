@@ -6,5 +6,12 @@ function send(){
     open(script+"?method="+addressBox.value+"|"+subjectBox.value+"|"+bodyBox.value);
 }
 function decrypt(){
-    var inputBox = document.getElementById("unencrypt")
+    var inputBox = document.getElementById("unencrypt");
+    var outputBox = document.getElementById("output");
+    var temparray = inputBox.value.split("|");
+    var temp = "";
+    for(i in temparray){
+        temp = temp + String.fromCharCode(Number(temparray[i]))
+    }
+    outputBox.innerHTML = temp;
 }
