@@ -12,7 +12,7 @@ function decrypt(){
     tempel.innerHTML = "test";
     
     alert(outputBox.innerHTML);
-    outputBox.innerHTML = 'test';
+    document.getElementById("output").innerHTML = "My string is: ";
     var temparray = inputBox.value.split("|");
     var temp = "";
     for(i in temparray){
