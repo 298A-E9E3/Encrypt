@@ -11,12 +11,10 @@ function decrypt(){
     var tempel = document.createElement('p');
     tempel.innerHTML = "test";
     
-    alert(outputBox.innerHTML);
-    document.getElementById("output").innerHTML = "My string is: ";
     var temparray = inputBox.value.split("|");
     var temp = "";
     for(i in temparray){
         temp = temp + String.fromCharCode(Number(temparray[i]))
     }
-    outputBox.innerHTML = temp;
+    alert(temp);
 }
